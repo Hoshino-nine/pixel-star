@@ -12,7 +12,7 @@
 
 | ID | 任务 | 预计工时 | 前置 | 状态 |
 | --- | --- | --- | --- | --- |
-| T01 | [dep-check 脚本](T01-dep-check-script.md) | 2-3 h | - | pending |
+| T01 | [dep-check 脚本](T01-dep-check-script.md) | 2-3 h | - | ✅ done (2026-05-21) |
 | T02 | [CMake 跨平台骨架](T02-cmake-skeleton.md) | 3-4 h | T01 | pending |
 | T03 | [third_party submodules](T03-third-party-submodules.md) | 2-3 h | T02 | pending |
 | T04 | [SDL2 + ImGui 引导](T04-sdl2-imgui-bootstrap.md) | 4-6 h | T03 | pending |
