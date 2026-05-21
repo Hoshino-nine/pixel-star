@@ -1,0 +1,85 @@
+# ==== Build output ====
+build/
+out/
+cmake-build-*/
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+*.obj
+*.o
+*.pdb
+*.ilk
+*.exp
+*.idb
+
+# ==== CMake ====
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+compile_commands.json
+
+# ==== IDE / Editor ====
+.vs/
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.shared.json
+.idea/
+*.user
+*.suo
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ==== Android ====
+android/.gradle/
+android/local.properties
+android/build/
+android/app/build/
+android/app/.cxx/
+android/app/release/
+android/captures/
+*.apk
+*.aab
+*.keystore
+!debug.keystore
+
+# ==== Gradle ====
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# ==== Java ====
+*.class
+hs_err_pid*
+
+# ==== Python (tools/) ====
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# ==== Logs / Telemetry runtime data (开发期间本地产出) ====
+*.log
+logs/
+
+# ==== Third-party 内的构建产物（保留源码与 submodule 引用） ====
+third_party/**/build/
+third_party/**/out/
+third_party/**/_deps/
+
+# ==== Codebuddy / 本工具链产物（IDE skill 包不入仓） ====
+.codebuddy/
+.agents/
+skills-lock.json
+
+# ==== 其他临时 ====
+*.tmp
+*.bak

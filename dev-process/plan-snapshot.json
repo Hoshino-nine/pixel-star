@@ -1,0 +1,87 @@
+{
+  "id": "d83b665d47fa4f97ad19d7f2eb1e56e8",
+  "name": "PixelStar - Android 像素画 App 开发计划",
+  "status": "building",
+  "snapshotAt": "2026-05-21T14:40+08:00",
+  "todolist": [
+    {
+      "id": "bootstrap-cross-platform",
+      "status": "pending",
+      "devPlansDir": "dev-plans/v0-foundation/",
+      "subtasks": ["T01", "T02", "T03", "T04", "T05"],
+      "summary": "依赖检查 + submodule + CMake 跨平台骨架 + SDL2/ImGui 引导 + 日志基础设施"
+    },
+    {
+      "id": "canvas-render-pipeline",
+      "status": "pending",
+      "dependencies": ["bootstrap-cross-platform"],
+      "devPlansDir": "dev-plans/v1-mvp/",
+      "subtasks": ["T01", "T02", "T03"],
+      "summary": "Canvas/Layer 数据模型 + GLRenderer + Dirty Rect 上传管线"
+    },
+    {
+      "id": "mvp-tools-and-ui",
+      "status": "pending",
+      "dependencies": ["canvas-render-pipeline"],
+      "devPlansDir": "dev-plans/v1-mvp/",
+      "subtasks": ["T04", "T05", "T06", "T07", "T08", "T09", "T10", "T11", "T12", "T13", "T14"],
+      "summary": "InputEvent → 4 工具 → History → theme.json → widgets → 工具栏 → 抽屉 → 调色板 → 手势 → telemetry"
+    },
+    {
+      "id": "png-export-and-android-shell",
+      "status": "pending",
+      "dependencies": ["mvp-tools-and-ui"],
+      "devPlansDir": "dev-plans/v1-mvp/",
+      "subtasks": ["T15", "T16", "T17", "T18"],
+      "summary": "PNG 导出 + Android Gradle 壳 + JNI MediaStore + MVP 双端验收"
+    },
+    {
+      "id": "layers-shapes-mirror-picker",
+      "status": "pending",
+      "dependencies": ["png-export-and-android-shell"],
+      "devPlansDir": "dev-plans/v2-standard/",
+      "subtasks": "TBD",
+      "summary": "图层系统 / 几何工具 / 选区 / 镜像 / HSV 拾取器 / 参考图（v2 进入时生成子任务文档）"
+    },
+    {
+      "id": "sprite-sheet-export",
+      "status": "pending",
+      "dependencies": ["layers-shapes-mirror-picker"],
+      "devPlansDir": "dev-plans/v2-standard/",
+      "subtasks": "TBD",
+      "summary": "Sprite Sheet 导出 + JSON 元数据；v2 收尾"
+    },
+    {
+      "id": "frame-animation-system",
+      "status": "pending",
+      "dependencies": ["sprite-sheet-export"],
+      "devPlansDir": "dev-plans/v3-full/",
+      "subtasks": "TBD",
+      "summary": "帧时间线 / 洋葱皮 / GIF·APNG·WebP 导出（v3 进入时生成子任务文档）"
+    },
+    {
+      "id": "pxs-and-aseprite-io",
+      "status": "pending",
+      "dependencies": ["frame-animation-system"],
+      "devPlansDir": "dev-plans/v3-full/",
+      "subtasks": "TBD",
+      "summary": ".pxs 二进制项目文件 + Aseprite JSON 兼容"
+    },
+    {
+      "id": "android-polish",
+      "status": "pending",
+      "dependencies": ["pxs-and-aseprite-io"],
+      "devPlansDir": "dev-plans/v3-full/",
+      "subtasks": "TBD",
+      "summary": "压感 / 分享 Intent / 主题切换 / 中英双语 / Thermal API / 调试面板 / Stitch 接入"
+    },
+    {
+      "id": "performance-and-release",
+      "status": "pending",
+      "dependencies": ["android-polish"],
+      "devPlansDir": "dev-plans/v4-release/",
+      "subtasks": "TBD",
+      "summary": "性能调优 + 文档 + Release APK"
+    }
+  ]
+}
