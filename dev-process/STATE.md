@@ -14,7 +14,7 @@
 
 # PixelStar 开发状态
 
-> 最后更新：2026-05-21 14:40
+> 最后更新：2026-05-21 15:06
 > 写入者：Agent (Claude)
 
 ## 当前状态
@@ -58,6 +58,7 @@ done / rework
 
 ## 最近事件（最新在前，最多保留 10 条；完整历史见 [`timeline.md`](timeline.md)）
 
+- `2026-05-21 15:06` 远程仓库初始化推送完成：HEAD `1397e7a`，与 `origin/main` 同步，仓库包含 LICENSE + dev-plans + dev-process。
 - `2026-05-21 14:40` dev-plans + dev-process 体系建立，27 个文档骨架版生成完毕，等待 `开始 v0/T01`
 
 ---
